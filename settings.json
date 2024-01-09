@@ -1,0 +1,99 @@
+{
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "files.associations": {
+        "*.PF": "fortran-modern",
+        "*.FOR": "fortran-modern"
+    },
+    "extensions.ignoreRecommendations": true,
+    "window.commandCenter": true,
+    "editor.renderWhitespace": "all",
+    "redhat.telemetry.enabled": false,
+    "explorer.confirmDelete": false,
+    "git.openRepositoryInParentFolders": "never",
+    "editor.minimap.enabled": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.enablePersistentSessions": false,
+    "debug.onTaskErrors": "debugAnyway",
+    "gopls": {
+        "ui.semanticTokens": true
+    },
+    "workbench.colorTheme": "Default Dark+",
+    "window.zoomLevel": 1,
+    "editor.lineNumbers": "relative",
+    "vim.handleKeys": {
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-x>": false
+    },
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [ "<leader>", "a" ],
+            "commands": [ "workbench.action.quickOpen" ]
+        },
+        {
+            "before": [ "<leader>", "p" ],
+            "commands": [ "workbench.view.explorer" ]
+        },
+        {
+            "before": [ "<leader>", "<left>"],
+            "commands": [ "workbench.action.moveEditorToPreviousGroup" ]
+        },
+        {
+            "before": [ "<leader>", "<right>"],
+            "commands": [ "workbench.action.moveEditorToNextGroup" ]
+        },
+        {
+            "before": [ "<leader>", "<up>"],
+            "commands": [ "workbench.action.moveActiveEditorGroupUp" ]
+        },
+        {
+            "before": [ "<leader>", "<down>"],
+            "commands": [ "workbench.action.moveActiveEditorGroupDown" ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-h>"],
+            "commands": ["editor.action.startFindReplaceAction"]
+        },
+        {
+            "before": ["<C-r>"],
+            "commands": ["editor.action.goToReferences"]
+        }
+    ],
+    "vim.leader": " ",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["<C-j>"],
+            "commands": ["editor.action.moveLinesDownAction"]
+        },
+        {
+            "before": ["<C-k>"],
+            "commands": ["editor.action.moveLinesUpAction"]
+        },
+        {
+            "before": ["<C-h>"],
+            "commands": ["editor.action.startFindReplaceAction"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<C-j>"],
+            "commands": ["editor.action.moveLinesDownAction"]
+        },
+        {
+            "before": ["<C-k>"],
+            "commands": ["editor.action.moveLinesUpAction"]
+        },
+        {
+            "before": ["<C-f>"],
+            "commands": ["editor.action.formatSelection"]
+        },
+        {
+            "before": ["<C-h>"],
+            "commands": ["editor.action.startFindReplaceAction"]
+        }
+    ]
+}
