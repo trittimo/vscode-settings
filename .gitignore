@@ -1,4 +1,5 @@
 */**
 !snippets/*
+!scriptCommands/*
 !settings.json
 !keybindings.json

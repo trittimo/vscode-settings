@@ -53,22 +53,28 @@
             "commands": [ "workbench.action.moveActiveEditorGroupDown" ]
         },
         {
-            "before": ["S-n"],
+            "before": ["C-n"],
             "commands": [{
-                "command": "editor.action.insertSnippet",
-                "args": {"name": "newline_snippet"}
-            }]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
+                "command": "scriptify.customCommand",
+                "args": "insert_newline"
+            }],
+        },
+        {
+            "before": ["<leader>", "e"],
+            "commands": [ "editor.action.marker.next" ]
+        
+        },
         {
             "before": ["<C-h>"],
             "commands": ["editor.action.startFindReplaceAction"]
         },
         {
-            "before": ["<C-r>"],
+            "before": ["g", "u"],
             "commands": ["editor.action.goToReferences"]
         }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        
     ],
     "vim.leader": " ",
     "vim.insertModeKeyBindings": [
@@ -83,6 +89,10 @@
         {
             "before": ["<C-h>"],
             "commands": ["editor.action.startFindReplaceAction"]
+        },
+        {
+            "before": ["k", "j"],
+            "after": ["<esc>"]
         }
     ],
     "vim.visualModeKeyBindings": [
