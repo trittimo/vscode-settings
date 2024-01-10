@@ -51,6 +51,13 @@
         {
             "before": [ "<leader>", "<down>"],
             "commands": [ "workbench.action.moveActiveEditorGroupDown" ]
+        },
+        {
+            "before": ["S-n"],
+            "commands": [{
+                "command": "editor.action.insertSnippet",
+                "args": {"name": "newline_snippet"}
+            }]
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
