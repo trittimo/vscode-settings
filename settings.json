@@ -112,5 +112,6 @@
             "before": ["<C-h>"],
             "commands": ["editor.action.startFindReplaceAction"]
         }
-    ]
+    ],
+    "telemetry.telemetryLevel": "off"
 }
