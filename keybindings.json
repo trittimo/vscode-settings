@@ -40,10 +40,5 @@
         "key": "ctrl+shift+alt+o",
         "command": "workbench.action.files.openFile",
         "when": "true"
-    },
-    {
-        "key": "ctrl+o",
-        "command": "-workbench.action.files.openFile",
-        "when": "true"
     }
 ]

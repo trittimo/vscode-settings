@@ -113,5 +113,6 @@
             "commands": ["editor.action.startFindReplaceAction"]
         }
     ],
-    "telemetry.telemetryLevel": "off"
+    "telemetry.telemetryLevel": "off",
+    "security.workspace.trust.enabled": false
 }
