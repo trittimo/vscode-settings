@@ -21,98 +21,30 @@
     },
     "workbench.colorTheme": "Default Dark+",
     "window.zoomLevel": 1,
-    "editor.lineNumbers": "relative",
-    "vim.handleKeys": {
-        "<C-c>": false,
-        "<C-v>": false,
-        "<C-x>": false
-    },
-    "vim.normalModeKeyBindings": [
-        {
-            "before": [ "<leader>", "a" ],
-            "commands": [ "workbench.action.quickOpen" ]
-        },
-        {
-            "before": [ "<leader>", "p" ],
-            "commands": [ "workbench.view.explorer" ]
-        },
-        {
-            "before": [ "<leader>", "<left>"],
-            "commands": [ "workbench.action.moveEditorToPreviousGroup" ]
-        },
-        {
-            "before": [ "<leader>", "<right>"],
-            "commands": [ "workbench.action.moveEditorToNextGroup" ]
-        },
-        {
-            "before": [ "<leader>", "<up>"],
-            "commands": [ "workbench.action.moveActiveEditorGroupUp" ]
-        },
-        {
-            "before": [ "<leader>", "<down>"],
-            "commands": [ "workbench.action.moveActiveEditorGroupDown" ]
-        },
-        {
-            "before": ["C-n"],
-            "commands": [{
-                "command": "scriptify.customCommand",
-                "args": "insert_newline"
-            }],
-        },
-        {
-            "before": ["<leader>", "e"],
-            "commands": [ "editor.action.marker.next" ]
-        
-        },
-        {
-            "before": ["<C-h>"],
-            "commands": ["editor.action.startFindReplaceAction"]
-        },
-        {
-            "before": ["g", "u"],
-            "commands": ["editor.action.goToReferences"]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        
-    ],
-    "vim.leader": " ",
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["<C-j>"],
-            "commands": ["editor.action.moveLinesDownAction"]
-        },
-        {
-            "before": ["<C-k>"],
-            "commands": ["editor.action.moveLinesUpAction"]
-        },
-        {
-            "before": ["<C-h>"],
-            "commands": ["editor.action.startFindReplaceAction"]
-        },
-        {
-            "before": ["k", "j"],
-            "after": ["<esc>"]
-        }
-    ],
-    "vim.visualModeKeyBindings": [
-        {
-            "before": ["<C-j>"],
-            "commands": ["editor.action.moveLinesDownAction"]
-        },
-        {
-            "before": ["<C-k>"],
-            "commands": ["editor.action.moveLinesUpAction"]
-        },
-        {
-            "before": ["<C-f>"],
-            "commands": ["editor.action.formatSelection"]
-        },
-        {
-            "before": ["<C-h>"],
-            "commands": ["editor.action.startFindReplaceAction"]
-        }
-    ],
     "telemetry.telemetryLevel": "off",
-    "security.workspace.trust.enabled": false
+    "security.workspace.trust.enabled": false,
+    "C_Cpp.default.compilerPath": "c:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx86\\x86\\cl.exe",
+    "C_Cpp.clang_format_fallbackStyle": "Chromium",
+    "C_Cpp.default.compilerArgs": [
+        "-std=c23"
+    ],
+    "terminal.integrated.cursorStyle": "line",
+    "python.createEnvironment.trigger": "off",
+    "lldb.suppressUpdateNotifications": true,
+    "C_Cpp.copilotHover": "disabled",
+    "chat.commandCenter.enabled": false,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "chat.disableAIFeatures": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vscode-neovim.compositeKeys": {
+        "kj": {
+            "command": "vscode-neovim.escape",
+        },
+    },
+    "editor.lineNumbers": "relative",
+    "window.titleBarStyle": "custom",
+    "window.customMenuBarAltFocus": false,
+    "window.enableMenuBarMnemonics": false
 }
