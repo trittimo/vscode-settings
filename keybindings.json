@@ -156,6 +156,26 @@
     },
     {
         "key": "ctrl+alt+f",
-        "command": "workbench.action.findInFiles"
-    }
+        "command": "workbench.view.search.focus"
+    },
+    {
+        "key": "ctrl+alt+f",
+        "command": "-repl.action.find",
+        "when": "inDebugRepl || inDebugRepl && focusedView == 'workbench.panel.repl.view'"
+    },
+    {
+        "key": "ctrl+alt+f",
+        "command": "-list.find.replInputFocus",
+        "when": "view == 'workbench.panel.repl.view'"
+    },
+    {
+        "key": "ctrl+alt+f",
+        "command": "-list.find",
+        "when": "listFocus && listSupportsFind"
+    },
+    {
+        "key": "ctrl+alt+f",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "searchViewletFocus"
+    },
 ]
