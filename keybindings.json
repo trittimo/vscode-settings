@@ -115,7 +115,7 @@
         "command": "-workbench.action.toggleSidebarVisibility"
     },
     {
-        "key": "shift+alt+e",
+        "key": "ctrl+alt+e",
         "command": "workbench.view.explorer",
         "when": "viewContainer.workbench.view.explorer.enabled"
     },
