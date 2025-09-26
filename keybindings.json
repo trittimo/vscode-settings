@@ -135,7 +135,7 @@
         "when": "hasSearchResult || inSearchEditor"
     },
     {
-        "key": "ctrl+tab",
+        "key": "shift+tab",
         "command": "search.action.focusPreviousSearchResult",
         "when": "hasSearchResult || inSearchEditor"
     },
@@ -150,7 +150,7 @@
         "when": "!activeEditorGroupEmpty"
     },
     {
-        "key": "shift+tab",
+        "key": "ctrl+tab",
         "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
         "when": "inEditorsPicker && inQuickOpen"
     },
