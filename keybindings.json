@@ -156,7 +156,8 @@
     },
     {
         "key": "ctrl+alt+f",
-        "command": "workbench.view.search.focus"
+        "command": "workbench.view.search.focus",
+        "when": "!searchViewletFocus"
     },
     {
         "key": "ctrl+alt+f",
@@ -177,5 +178,29 @@
         "key": "ctrl+alt+f",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "searchViewletFocus"
+    },
+    {
+        "key": "ctrl+alt+h",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "searchViewletFocus"
+    },
+    {
+        "key": "ctrl+alt+h",
+        "command": "workbench.action.replaceInFiles",
+        "when": "!searchViewletFocus"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "-workbench.action.replaceInFiles"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
     },
 ]
