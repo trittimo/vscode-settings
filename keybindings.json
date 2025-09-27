@@ -155,7 +155,7 @@
         "when": "inEditorsPicker && inQuickOpen"
     },
     {
-        "key": "ctrl+alt+f",
+        "key": "ctrl+shift+f",
         "command": "workbench.view.search.focus",
         "when": "!searchViewletFocus"
     },
@@ -175,7 +175,7 @@
         "when": "listFocus && listSupportsFind"
     },
     {
-        "key": "ctrl+alt+f",
+        "key": "ctrl+shift+h",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "searchViewletFocus"
     },
@@ -185,7 +185,7 @@
         "when": "searchViewletFocus"
     },
     {
-        "key": "ctrl+alt+h",
+        "key": "ctrl+shift+h",
         "command": "workbench.action.replaceInFiles",
         "when": "!searchViewletFocus"
     },
@@ -202,5 +202,41 @@
         "key": "ctrl+shift+tab",
         "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
         "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+x",
+        "command": "-workbench.view.extensions",
+        "when": "viewContainer.workbench.view.extensions.enabled"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+shift+x",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+f4",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-workbench.action.findInFiles"
+    },
+    {
+        "key": "ctrl+; ctrl+shift+f",
+        "command": "-testing.coverageCurrentFile",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-workbench.view.search",
+        "when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "searchViewletFocus"
     },
 ]
