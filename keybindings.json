@@ -155,7 +155,7 @@
         "when": "inEditorsPicker && inQuickOpen"
     },
     {
-        "key": "ctrl+shift+f",
+        "key": "ctrl+alt+f",
         "command": "workbench.view.search.focus",
         "when": "!searchViewletFocus"
     },
@@ -183,11 +183,6 @@
         "key": "ctrl+alt+h",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "searchViewletFocus"
-    },
-    {
-        "key": "ctrl+shift+h",
-        "command": "workbench.action.replaceInFiles",
-        "when": "!searchViewletFocus"
     },
     {
         "key": "ctrl+shift+h",
@@ -235,8 +230,62 @@
         "when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
     },
     {
-        "key": "ctrl+shift+f",
+        "key": "ctrl+alt+f",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "searchViewletFocus"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "searchViewletFocus"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-notebook.formatCell",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "ctrl+k ctrl+f",
+        "command": "-editor.action.formatSelection",
+        "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-notebook.format",
+        "when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+s",
+        "command": "-workbench.action.files.saveWithoutFormatting"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "-editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "workbench.action.replaceInFiles",
+        "when": "!searchViewletFocus"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "-workbench.action.terminal.runRecentCommand",
+        "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "-workbench.action.terminal.sendSequence",
+        "when": "accessibilityModeEnabled && terminalFocus"
     },
 ]
