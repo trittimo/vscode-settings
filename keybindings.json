@@ -156,7 +156,7 @@
     },
     {
         "key": "ctrl+alt+f",
-        "command": "workbench.view.search.focus",
+        "command": "workbench.action.findInFiles",
         "when": "!searchViewletFocus"
     },
     {
