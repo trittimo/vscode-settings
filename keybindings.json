@@ -50,6 +50,16 @@
         "when": "problemFocus"
     },
     {
+        "key": "ctrl+a",
+        "command": "-editor.action.selectAll"
+    },
+    {
+        "key": "ctrl+a",
+        "args": "<C-a>",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "ctrl+alt+e",
         "command": "workbench.view.explorer",
         "when": "viewContainer.workbench.view.explorer.enabled"
@@ -88,6 +98,10 @@
         "key": "ctrl+alt+h",
         "command": "workbench.action.replaceInFiles",
         "when": "!searchViewletFocus"
+    },
+    {
+        "key": "ctrl+alt+o",
+        "command": "workbench.action.files.openFile"
     },
     {
         "key": "ctrl+alt+r",
@@ -234,10 +248,6 @@
         "key": "ctrl+shift+o",
         "command": "workbench.action.files.openFolder",
         "when": "openFolderWorkspaceSupport"
-    },
-    {
-        "key": "ctrl+alt+o",
-        "command": "workbench.action.files.openFile"
     },
     {
         "key": "ctrl+shift+tab",
