@@ -46,5 +46,6 @@
     "editor.lineNumbers": "relative",
     "window.titleBarStyle": "custom",
     "window.customMenuBarAltFocus": false,
-    "window.enableMenuBarMnemonics": false
+    "window.enableMenuBarMnemonics": false,
+    "dotnetAcquisitionExtension.enableTelemetry": false
 }
