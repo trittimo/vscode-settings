@@ -354,5 +354,15 @@
         "key": "tab",
         "command": "search.action.focusNextSearchResult",
         "when": "hasSearchResult || inSearchEditor"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-markdown.showPreview",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-notebook.cell.pasteAbove",
+        "when": "notebookEditorFocused && !inputFocus"
     }
 ]
