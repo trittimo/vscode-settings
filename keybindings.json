@@ -348,12 +348,12 @@
     {
         "key": "shift+tab",
         "command": "search.action.focusPreviousSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
+        "when": "hasSearchResult && inSearchEditor"
     },
     {
         "key": "tab",
         "command": "search.action.focusNextSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
+        "when": "hasSearchResult && inSearchEditor"
     },
     {
         "key": "ctrl+shift+v",
