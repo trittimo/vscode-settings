@@ -337,13 +337,8 @@
     },
     {
         "key": "shift+k",
-        "command": "editor.action.peekDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus && neovim.mode != insert"
-    },
-    {
-        "key": "shift+k",
-        "command": "-editor.action.showHover",
-        "when": "editorHoverVisible && editorTextFocus && neovim.init && neovim.mode == 'normal'"
+        "command": "editor.action.showHover",
+        "when": "editorHasHoverProvider && editorTextFocus && neovim.init && neovim.mode == 'normal'"
     },
     {
         "key": "shift+tab",
