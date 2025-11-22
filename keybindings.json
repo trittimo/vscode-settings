@@ -354,5 +354,25 @@
         "key": "tab",
         "command": "search.action.focusNextSearchResult",
         "when": "hasSearchResult || inSearchEditor"
+    },
+    {
+        "key": "alt+n",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "a",
+        "command": "-explorer.newFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "shift+alt+n",
+        "command": "explorer.newFolder",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "shift+a",
+        "command": "-explorer.newFolder",
+        "when": "filesExplorerFocus && !inputFocus"
     }
 ]
