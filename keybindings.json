@@ -348,12 +348,12 @@
     {
         "key": "shift+tab",
         "command": "search.action.focusPreviousSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
+        "when": "hasSearchResult && inSearchEditor"
     },
     {
         "key": "tab",
         "command": "search.action.focusNextSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
+        "when": "hasSearchResult && inSearchEditor"
     },
     {
         "key": "alt+n",
@@ -374,5 +374,15 @@
         "key": "shift+a",
         "command": "-explorer.newFolder",
         "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-markdown.showPreview",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-notebook.cell.pasteAbove",
+        "when": "notebookEditorFocused && !inputFocus"
     }
 ]
